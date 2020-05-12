@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,13 @@
     "request": "^2.88.2"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avads1/WeatheringHeights.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avads1/WeatheringHeights/issues"
+  },
+  "homepage": "https://github.com/avads1/WeatheringHeights#readme",
   "description": ""
 }

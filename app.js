@@ -7,6 +7,9 @@ const forecast = require('./utils/forecast')
 // const getForecast = require('./getForecast')
 const app = express()
 
+//Setting up port for heroku or default to 3000
+const port = process.env.PORT || 3000
+
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../WeatheringHeights/public')
 const viewsPath = path.join(__dirname, '../WeatheringHeights/templates/views')
@@ -35,7 +38,7 @@ app.get('/weather', (req, res) => {
             error: 'You must provide an address!'
         })
     }
-    geocode(req.query.address, (error, { latitude, longitude, location }) => {
+    geocode(req.query.address, (error, { latitude, longitude, location }={}) => {
         // console.log('Error', error)
         // console.log('Data', data)
         if (error) {
@@ -75,6 +78,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log('Server is up on port '+port)
 })
