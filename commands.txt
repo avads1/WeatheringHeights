@@ -1,0 +1,77 @@
+npm packages used
+
+
+//nodemon helps is reflecting the changes immediately without runtime parsing
+npm install -g nodemon
+
+//Changing color of text
+npm i chalk
+
+//Parsing command line args
+npm i yargs 
+
+//String validator
+npm i validator
+
+/* 
+How to modify nodemon command to restart automatically when hbs files are changed?
+Use -e flag ie -extensions. Allows to provide comma separated list of extensions nodemon should watch
+*/
+
+
+nodemon app.js -e js,hbs
+
+
+
+//To get info about linux machine
+
+uname -a
+Linux SEGUBSAQRDEV002 4.15.0-99-generic #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Output : 
+kernel name
+node name
+kernel release
+kernel version
+machine
+processor
+hardware platform
+operating system
+
+
+Run scripts listed in package.json
+
+npm run start
+npm run dev
+
+Deploying to heroku!
+
+https://weathering-heights.herokuapp.com/ | https://git.heroku.com/weathering-heights.git
+
+git push heroku master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
