@@ -11,10 +11,11 @@ const app = express()
 const port = process.env.PORT || 3000
 
 // Define paths for Express config
-const publicDirectoryPath = path.join(__dirname, '../WeatheringHeights/public')
-const viewsPath = path.join(__dirname, '../WeatheringHeights/templates/views')
-const partialsPath = path.join(__dirname, '../WeatheringHeights/templates/partials')
-console.log(publicDirectoryPath)
+const publicDirectoryPath = path.join(__dirname, '/public')
+const viewsPath = path.join(__dirname, '/templates/views')
+const partialsPath = path.join(__dirname, '/templates/partials')
+ console.log(publicDirectoryPath)
+// console.log(__dirname)
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
